@@ -25,13 +25,23 @@
             color: var(--text-primary);
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             min-height: 100vh;
             position: relative;
-            overflow: hidden;
+            overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
-
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1.25rem;
+            text-align: center;
+        }
+        @media (max-width: 480px) {
+            .subtitle {
+                font-size: 0.85rem;
+            }
+        }
         /* 极淡的工程网格背景 */
         body::before {
             content: '';
@@ -82,6 +92,7 @@
             color: var(--text-secondary);
             font-size: 0.95rem;
             margin-bottom: 1.25rem;
+            text-align: center;
         }
 
         .tagline {
@@ -265,7 +276,7 @@
         <p class="subtitle">Integrated Master's in Mechanical &amp; Manufacturing Engineering</p>
 
         <p class="tagline">
-            SolidWorks CAD · CFD/FEA · Microfluidics
+            SolidWorks · CFD/FEA · Microfluidics
         </p>
 
         <!-- 动作按钮区 -->
@@ -292,9 +303,9 @@
             </div>
 
             <!-- 电话 (点击复制) -->
-            <div class="info-item copyable" onclick="copyToClipboard('+353 00 000 0000', 'Phone number copied')">
+            <div class="info-item copyable" onclick="copyToClipboard('+353 89 980 8774', 'Phone number copied')">
                 <svg class="icon-main" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <span>+353 00 000 0000</span>
+                <span>+353 89 980 8774</span>
                 <div class="copy-hint">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
                     Copy
